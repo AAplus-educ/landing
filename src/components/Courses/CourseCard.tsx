@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { ChevronRight, Clock, Star } from "lucide-react";
+import { ChevronRight, Clock, Star, BookCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Course } from "@/types/course";
 import { Badge } from "../ui/badge";
@@ -24,6 +24,7 @@ function CourseCard({ course }: Props) {
         width={300}
         height={200}
         className="object-cover w-full h-[200px]"
+        style={{ viewTransitionName: `CourseImage-${course.uuid}` }}
       />
       <CardHeader>
         <CardTitle>{course.title}</CardTitle>
@@ -35,6 +36,10 @@ function CourseCard({ course }: Props) {
             <Clock className="mr-1 h-4 w-4" />
             {course.duration}
           </Badge>
+          <Badge variant="outline" className="flex items-center">
+            <BookCheck className="mr-1 h-4 w-4" />
+            {course.category.title}
+          </Badge>
         </div>
       </CardContent>
       <CardFooter className="mt-auto flex justify-between">
@@ -42,10 +47,20 @@ function CourseCard({ course }: Props) {
           <Star className="mr-1 h-4 w-4 fill-yellow-400 text-yellow-400" />
           <span>{course.rating}</span>
         </div>
-        <Button className="flex items-center gap-2">
-          <span>Inscribirse</span>
-          <ChevronRight />
-        </Button>
+        <div className="flex items-center gap-2">
+          <Button
+            className="flex items-center gap-2 group"
+            size={"sm"}
+            variant={"outline"}
+          >
+            <span>Ver curso</span>
+            <ChevronRight className="transition group-hover:translate-x-2" />
+          </Button>
+          <Button className="flex items-center gap-2 group" size={"sm"}>
+            <span>Inscribirse</span>
+            <ChevronRight className="transition group-hover:translate-x-2" />
+          </Button>
+        </div>
       </CardFooter>
     </Card>
   );

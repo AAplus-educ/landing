@@ -1,3 +1,5 @@
+import { Category } from "./category";
+
 export type Course = {
   uuid: string;
   title: string;
@@ -5,4 +7,6 @@ export type Course = {
   duration: string;
   rating: number;
   image: string;
+  featured: boolean;
+  category: Category;
 };
