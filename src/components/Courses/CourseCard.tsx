@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Clock, Star } from "lucide-react";
+import { ChevronRight, Clock, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Course } from "@/types/course";
 import { Badge } from "../ui/badge";
@@ -42,7 +42,10 @@ function CourseCard({ course }: Props) {
           <Star className="mr-1 h-4 w-4 fill-yellow-400 text-yellow-400" />
           <span>{course.rating}</span>
         </div>
-        <Button>Inscribirse</Button>
+        <Button className="flex items-center gap-2">
+          <span>Inscribirse</span>
+          <ChevronRight />
+        </Button>
       </CardFooter>
     </Card>
   );

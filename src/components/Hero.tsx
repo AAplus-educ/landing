@@ -1,3 +1,4 @@
+import { ChevronRight } from "lucide-react";
 import { Button } from "./ui/button";
 
 function Hero() {
@@ -14,8 +15,11 @@ function Hero() {
               tu carrera profesional.
             </p>
           </div>
-          <div className="space-x-4">
-            <Button>Explorar Cursos</Button>
+          <div className="flex items-center justify-center gap-4">
+            <Button className="flex items-center gap-2">
+              <span>Explorar Cursos</span>
+              <ChevronRight />
+            </Button>
             <Button variant="outline">Saber Más</Button>
           </div>
         </div>
