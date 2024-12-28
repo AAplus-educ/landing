@@ -9,6 +9,8 @@ import { Courses } from "@/data/courses";
 import { Members } from "@/data/members";
 import { Stats } from "@/data/stats";
 import { Testimonials } from "@/data/testimonials";
+import { ChevronRight } from "lucide-react";
+import { Link } from "react-router";
 
 function Home() {
   return (
@@ -20,13 +22,23 @@ function Home() {
             Cursos Destacados
           </h2>
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-            {Courses.map((course) => (
+            {Courses.filter((course) => course.featured).map((course) => (
               <CourseCard key={course.uuid} course={course} />
             ))}
           </div>
-          <div className="mt-12 text-center">
-            <Button size="lg">Ver todos los cursos</Button>
-          </div>
+          <Link
+            className="mt-12 text-center block"
+            to={"/courses"}
+            viewTransition
+          >
+            <Button
+              size="lg"
+              className="flex items-center justify-center gap-2 mx-auto group"
+            >
+              <span>Ver todos los cursos</span>
+              <ChevronRight className="transition group-hover:translate-x-2" />
+            </Button>
+          </Link>
         </div>
       </section>
       <CountDown DateIsoFormat="2025-01-10T09:00:00" nextCourse={Courses[0]} />

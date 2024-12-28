@@ -11,7 +11,7 @@ import { Faqs } from "@/data/faqs";
 const AboutUs = () => {
   return (
     <section className="px-10 py-20 min-h-screen">
-      <div className="flex gap-6 flex-wrap justify-between max-w-screen-2xl mx-auto min-h-[80vh]">
+      <div className="flex gap-6 flex-wrap justify-between max-w-screen-2xl mx-auto min-h-[80vh] px-2">
         <section className="flex-1 flex flex-col gap-8">
           <h1 className="scroll-m-20 text-2xl font-bold tracking-tight">
             About us
@@ -61,7 +61,7 @@ const AboutUs = () => {
           </figure>
         </section>
       </div>
-      <div className="max-w-screen-2xl mx-auto min-h-screen">
+      <div className="max-w-screen-2xl mx-auto min-h-screen px-2">
         <section className="">
           <h2 className="scroll-m-20 text-2xl font-bold tracking-tight mb-6 text-center">
             FAQ

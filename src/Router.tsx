@@ -4,6 +4,7 @@ import AboutUs from "./pages/AboutUs.tsx";
 import Home from "./pages/Home.tsx";
 
 import { createBrowserRouter } from "react-router-dom";
+import CoursesIndex from "./pages/Courses/index.tsx";
 
 export const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/courses",
-        element: <div>Courses</div>,
+        element: <CoursesIndex />,
       },
       {
         path: "/courses/:coursesId",
