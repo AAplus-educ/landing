@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+.move-anim {
+  animation: move 5s linear infinite;
+}
+
+.rotating-wheel {
+  cursor: pointer;
+  animation-fill-mode: forwards;
+}
+
+.rotate-forwards {
+  animation: rotate-forwards 0.4s linear;
+}
+
+.rotate-backwards {
+  animation: rotate-backwards 0.4s linear;
+}
+
+@keyframes rotate-forwards {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-backwards {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes move {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+}
