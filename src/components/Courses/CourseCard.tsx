@@ -17,7 +17,7 @@ type Props = {
 
 function CourseCard({ course }: Props) {
   return (
-    <Card className="flex flex-col transition hover:scale-105 shadow-lg">
+    <Card className="flex flex-col transition hover:scale-105 shadow-lg max-w-sm w-full">
       <img
         src={course.image}
         alt={course.title}
