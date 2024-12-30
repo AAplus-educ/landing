@@ -5,6 +5,7 @@ import Home from "./pages/Home.tsx";
 
 import { createBrowserRouter } from "react-router-dom";
 import CoursesIndex from "./pages/Courses/index.tsx";
+import Contacts from "./pages/Contacts.tsx";
 
 export const router = createBrowserRouter([
   {
@@ -30,7 +31,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/contacts",
-        element: <div>Contact</div>,
+        element: <Contacts />,
       },
     ],
   },
