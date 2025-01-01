@@ -27,16 +27,26 @@ function CourseCard({ course }: Props) {
         style={{ viewTransitionName: `CourseImage-${course.uuid}` }}
       />
       <CardHeader>
-        <CardTitle>{course.title}</CardTitle>
-        <CardDescription>{course.description}</CardDescription>
+        <CardTitle className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 font-bold font-sans">
+          {course.title}
+        </CardTitle>
+        <CardDescription className="font-serif">
+          {course.description}
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <div className="flex items-center space-x-4 text-sm">
-          <Badge variant="outline" className="flex items-center">
+          <Badge
+            variant="outline"
+            className="flex items-center bg-cyan-400 text-gray-700 dark:bg-transparent dark:text-white"
+          >
             <Clock className="mr-1 h-4 w-4" />
             {course.duration}
           </Badge>
-          <Badge variant="outline" className="flex items-center">
+          <Badge
+            variant="outline"
+            className="flex items-center bg-blue-400 text-white dark:bg-white dark:text-black"
+          >
             <BookCheck className="mr-1 h-4 w-4" />
             {course.category.title}
           </Badge>
