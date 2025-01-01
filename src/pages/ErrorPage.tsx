@@ -1,6 +1,14 @@
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Button } from "@/components/ui/button";
 import { isRouteErrorResponse, Link, useRouteError } from "react-router";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Ghost } from "lucide-react";
 
 function ErrorPage() {
   const error = useRouteError();
@@ -9,19 +17,31 @@ function ErrorPage() {
     : `Ha ocurrido un error ${(error as Error).message}`;
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <section className="grid place-items-center min-h-screen bg-white dark:bg-black">
-        <div className="bg-white py-4 px-8 rounded-lg shadow-lg dark:bg-white border">
-          <div className="text-center">
-            <div className="max-w-md">
-              <h1 className="text-5xl font-bold">Upps, algo salió mal</h1>
-              <p className="py-6">{renderError}</p>
-              <Link to="/" className="btn btn-primary">
-                <Button>Regresar al inicio</Button>
-              </Link>
+      <div className="h-screen w-full flex items-center justify-center bg-background dark:bg-gray-900">
+        <Card className="w-[420px] shadow-lg border-2 border-primary/20 dark:border-primary/10">
+          <CardHeader>
+            <div className="flex justify-center">
+              <Ghost className="h-24 w-24 text-primary dark:text-primary/90" />
             </div>
-          </div>
-        </div>
-      </section>
+            <CardTitle className="text-3xl font-bold text-center mt-4 dark:text-white">
+              404 - Página no encontrada
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-center text-muted-foreground dark:text-gray-300">
+              {renderError}
+            </p>
+          </CardContent>
+          <CardFooter className="flex justify-center">
+            <Button
+              asChild
+              className="dark:bg-primary dark:text-primary-foreground dark:hover:bg-primary/90"
+            >
+              <Link to="/">Volver a la página principal</Link>
+            </Button>
+          </CardFooter>
+        </Card>
+      </div>
     </ThemeProvider>
   );
 }
