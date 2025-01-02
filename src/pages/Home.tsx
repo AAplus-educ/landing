@@ -18,7 +18,7 @@ function Home() {
       <Hero />
       <section className="w-full py-12 md:py-24 lg:py-32 dark:bg-gray-900">
         <div className="container px-4 md:px-6 mx-auto">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-[#FF723B] dark:text-white">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-black dark:text-white">
             Cursos Destacados
           </h2>
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
@@ -44,7 +44,7 @@ function Home() {
       <CountDown DateIsoFormat="2025-01-10T09:00:00" nextCourse={Courses[0]} />
       <section className="w-full py-12 md:py-24 lg:py-32 bg-transparent">
         <div className="container px-4 md:px-6 mx-auto">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-[#FF723B] dark:text-white">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-black dark:text-white">
             Nuestro Equipo
           </h2>
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
@@ -56,7 +56,7 @@ function Home() {
       </section>
       <section className="w-full py-12 md:py-24 lg:py-32 bg-transparent">
         <div className="container px-4 md:px-6 mx-auto">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-[#FF723B] dark:text-white">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-black dark:text-white">
             Nuestro Impacto
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
