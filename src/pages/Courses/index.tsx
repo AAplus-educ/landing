@@ -34,7 +34,7 @@ function CoursesIndex() {
   };
 
   return (
-    <section className="bg-gradient-to-r from-[#E2E2E2] to-[#C9D6FF] dark:from-[#000428] dark:to-[#004E92]">
+    <section className="bg-gradient-to-t from-[#eBC0FD] to-[#D9DED8] dark:from-[#09203F] dark:to-[#537895]">
       <div className="max-w-screen-2xl mx-auto py-6 px-2">
         <form
           className="relative mb-6 max-w-lg mx-auto"

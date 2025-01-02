@@ -144,7 +144,7 @@ function Contacts() {
   };
 
   return (
-    <section className="min-h-screen">
+    <section className="min-h-screen bg-gradient-to-t from-[#eBC0FD] to-[#D9DED8] dark:from-[#09203F] dark:to-[#537895]">
       <div className="flex gap-6 justify-between max-w-screen-2xl mx-auto flex-wrap">
         <section className="flex-1 p-6">
           <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0 text-center mb-4">
