@@ -59,14 +59,17 @@ function CourseCard({ course }: Props) {
         </div>
         <div className="flex items-center gap-2">
           <Button
-            className="flex items-center gap-2 group"
+            className="flex items-center gap-2 group dark:bg-blue-600 dark:hover:bg-blue-500"
             size={"sm"}
             variant={"outline"}
           >
             <span>Ver curso</span>
             <ChevronRight className="transition group-hover:translate-x-2" />
           </Button>
-          <Button className="flex items-center gap-2 group" size={"sm"}>
+          <Button
+            className="flex items-center gap-2 group bg-[#FF723B] hover:bg-[#fd7c49]"
+            size={"sm"}
+          >
             <span>Inscribirse</span>
             <ChevronRight className="transition group-hover:translate-x-2" />
           </Button>

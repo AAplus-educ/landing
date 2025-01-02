@@ -7,7 +7,7 @@ import { Toaster } from "sonner";
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <main className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
+      <main className="min-h-screen bg-gray-200 dark:bg-black text-black dark:text-white">
         <Navbar />
         <Outlet />
         <Toaster position="bottom-right" />
