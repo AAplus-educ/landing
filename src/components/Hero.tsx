@@ -1,5 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import { Button } from "./ui/button";
+import { Link } from "react-router";
 
 function Hero() {
   return (
@@ -16,11 +17,12 @@ function Hero() {
             </p>
           </div>
           <div className="flex items-center justify-center gap-4">
-            <Button className="flex items-center gap-2 group">
-              <span>Explorar Cursos</span>
-              <ChevronRight className="transition group-hover:translate-x-2" />
-            </Button>
-            <Button variant="outline">Saber Más</Button>
+            <Link to="/courses" viewTransition>
+              <Button className="flex items-center gap-2 group">
+                <span>Explorar Cursos</span>
+                <ChevronRight className="transition group-hover:translate-x-2" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
