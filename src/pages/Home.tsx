@@ -71,7 +71,7 @@ function Home() {
           </Link>
         </div>
       </section>
-      <CountDown DateIsoFormat="2025-01-20T09:00:00" nextCourse={Courses[0]} />
+      <CountDown DateIsoFormat="2025-01-25T14:53:00" nextCourse={Courses[0]} />
       <section className="w-full py-12 md:py-24 lg:py-32 bg-transparent">
         <div className="container px-4 md:px-6 mx-auto">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-black dark:text-white">

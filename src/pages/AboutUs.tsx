@@ -88,7 +88,7 @@ const AboutUs = () => {
                 className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-300"
                 loading="lazy"
                 src="https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Img medium"
+                alt="Img small"
               />
             </figure>
             <figure className="group border border-red-500 dark:border-yellow-300 rounded-full w-44 h-44 overflow-hidden">
@@ -96,7 +96,7 @@ const AboutUs = () => {
                 className="object-cover w-full h-full relative z-10 group-hover:scale-110 transition-transform duration-300"
                 loading="lazy"
                 src="https://images.unsplash.com/photo-1695192577284-fd1b10529579?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Img small"
+                alt="Img medium"
               />
             </figure>
             <figure className="group border border-red-500 dark:border-yellow-300 rounded-full w-64 h-64 overflow-hidden">
